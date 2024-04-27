@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height:150px;
+    /* background-color: cadetblue; */
+}
+
+.icon {
+    margin-left: 170px;
+    margin-top: 55px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 40px;
+}
+.search{
+    margin-right:100px;
+}
+.search-bar{
+    margin-top: 55px;
+    margin-left:50px;
+    width:300px;   
+    padding:7px;
+    background-color:#CCCCCC;
+    border:none;
+    border-radius:8px;
+    font-size: 15px;
+}
+.main{
+    margin-top:70px;  
+    display:flex;
+}
+.content{
+    width:250px;
+    margin-left: 160px;
+    margin-right:100px;
+    margin-top: 50px;
+}
+.main-content{
+    width:250px;
+}
+.content-heading{
+    font-size:30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.topics{
+    color:gray;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    font-size: 25px;
+    transition:opacity 0.1s;
+}
+
+.topics span:hover{
+    color:black;
+    cursor:pointer;
+}   
+.topics span{
+    margin-bottom:20px;
+    margin-left:0;
+}
+.vertical-line {
+    border-left: 1px solid black;
+    height: 470px; /* Set the height of the line */
+   margin-right:10px;
+  }
+.main-content{
+    margin-top: 30px;
+    display:flex;
+}
+.writing-section{
+    font-size:20px;
+    margin:150px;
+    margin-top:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.ws-head{
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:70px;
+
+}
+
+.paragraph{
+    font-size:20px;
+    /* padding:7px; */
+}
+footer{
+    margin-bottom:100px;
+}
