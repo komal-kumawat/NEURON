@@ -7,8 +7,6 @@
 .header {
     display: flex;
     justify-content:space-between;
-    height:150px;
-    /* background-color: cadetblue; */
 }
 
 .icon {
@@ -17,10 +15,8 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-size: 40px;
 }
-.search{
-    margin-right:100px;
-}
 .search-bar{
+    margin-right:100px;
     margin-top: 55px;
     margin-left:50px;
     width:300px;   
@@ -95,6 +91,6 @@
     font-size:20px;
     /* padding:7px; */
 }
-footer{
+.footer{
     margin-bottom:100px;
 }
