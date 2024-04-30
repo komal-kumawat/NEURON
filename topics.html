@@ -12,8 +12,10 @@
     <!-- ----------------------HEADER SECTION---------------------------- -->
     <div class="header">
         <div class="icon">NEURONS</div>
-        <div class="extra-space"></div>
-        <input class="search-bar" placeholder="Search" type="text">
+        <div>
+            <input class="search-bar" placeholder="Search" type="text">
+        </div>
+
     </div>
     <!-- main section -->
     <div class="main">
@@ -22,65 +24,174 @@
             <div class="main-content">
                 <div class="vertical-line"></div>
                 <div class="topics">
-                    <span>Introduction</span>
-                    <span>Basics of AI</span>
-                    <span>Roadmap</span>
-                    <span>Linear Algebra</span>
-                    <span>Calculus</span>
-                    <span>Statistics</span>
-                    <span>Probability</span>
-                    <span>Python Basics</span>
-                    <span>Python Libraries</span>
-                    <span>Actual ML Concepts</span>
+                    <span class="toggle-section" data-target="introContent" id="Introduction">Introduction</span>
+                    <span class="toggle-section" data-target="basicsContent" id="basics">Basics of AI</span>
+                    <span class="toggle-section" data-target="roadmapContent" id="roadmap">Roadmap</span>
+                    <span class="toggle-section" data-target="LAContent" id="LA">Linear Algebra</span>
+                    <span class="toggle-section" data-target="calculusContent" id="calculus">Calculus</span>
+                    <span class="toggle-section" data-target="statsContent" id="stats">Statistics</span>
+                    <span id="probability">Probability</span>
+                    <span id="pythonBasics">Python Basics</span>
+                    <span id="libraries">Python Libraries</span>
+                    <span id="actualMLConcepts">Actual ML Concepts</span>
                 </div>
             </div>
         </div>
         <div class="writing-section">
-            <div class="ws-head">Introduction to Machine Learning</div>
+            <div class="content-section" id="introContent">
+                <div class="ws-head">Introduction to Machine Learning</div>
 
-            <p class="paragraph">
-            <p>1914 translation by H.Rackham</p>"But I must explain to you how all this mistaken idea
-            of denouncing pleasure and praising pain was born and I will give you a complete account of
-            the system,and expound the actual teachings of the great explorer of the truth, the
-            master-builder of human happiness. No one rejects,dislikes,or avoids pleasure itself,because
-            it is pleasure,but because those who do not know how to pursue pleasure rationally encounter
-            consequences that are extremely painful.Nor again is there anyonewho loves or pursues or desires to
-            obtain pain itself, because it is pain, but because occassionally circumstances occur
-            in which toil and pain can prcure him some great pleasure. To take a trivial example
-            , which of us ever undertakes laborius physical exercise, except to obtain
-            some advantage from it? But who has any right to find fault with a man who
-            chooses to enjoy a pleasure that has no annoying consequences"
-            </p>
 
-            <p class="paragraph">Machine learning, a branch of artificial intelligence, empowers computers to learn and
-                improve from
-                experience without being explicitly programmed. Central to its functionality is data, which provides the
-                foundation for algorithms to identify patterns and make informed decisions. These algorithms leverage
-                features, the measurable properties of data, to predict labels or targets in supervised learning tasks.
-                Models, mathematical representations of data relationships, are trained on datasets to optimize
-                parameters for accurate predictions. To assess performance, data is split into training and testing
-                sets, ensuring models generalize well to new data and avoid overfitting. With supervised, unsupervised,
-                and reinforcement learning techniques, machine learning finds applications in diverse fields like
-                healthcare, finance, and autonomous vehicles, shaping our increasingly data-driven world.</p>
-            <p>
-                Machine learning, a subset of artificial intelligence, enables computers to learn from data and make
-                predictions or decisions without being explicitly programmed. It leverages algorithms to identify
-                patterns in data, which are used to train models for various tasks. With supervised, unsupervised, and
-                reinforcement learning techniques, machine learning finds applications across industries,
-                revolutionizing fields such as healthcare, finance, and autonomous vehicles.
-            </p>
-            <p>
-                Machine learning, a subset of artificial intelligence, enables computers to learn from data and make
-                predictions or decisions without being explicitly programmed. It leverages algorithms to identify
-                patterns in data, which are used to train models for various tasks. With supervised, unsupervised, and
-                reinforcement learning techniques, machine learning finds applications across industries,
-                revolutionizing fields such as healthcare, finance, and autonomous vehicles.
-            </p>
+                <p class="paragraph">1914 translation by H.Rackham</p>
+                <p class="paragraph">"But I must explain to you how all this mistaken idea
+                    of denouncing pleasure and praising pain was born and I will give you a complete account of
+                    the system,and expound the actual teachings of the great explorer of the truth, the
+                    master-builder of human happiness. No one rejects,dislikes,or avoids pleasure itself,because
+                    it is pleasure,but because those who do not know how to pursue pleasure rationally encounter
+                    consequences that are extremely painful.Nor again is there anyonewho loves or pursues or desires to
+                    obtain pain itself, because it is pain, but because occassionally circumstances occur
+                    in which toil and pain can prcure him some great pleasure. To take a trivial example
+                    , which of us ever undertakes laborius physical exercise, except to obtain
+                    some advantage from it? But who has any right to find fault with a man who
+                    chooses to enjoy a pleasure that has no annoying consequences"
+                </p>
+
+                <p class="paragraph">Machine learning, a branch of artificial intelligence, empowers computers to learn
+                    and
+                    improve from
+                    experience without being explicitly programmed. Central to its functionality is data, which provides
+                    the
+                    foundation for algorithms to identify patterns and make informed decisions. These algorithms
+                    leverage
+                    features, the measurable properties of data, to predict labels or targets in supervised learning
+                    tasks.
+                    Models, mathematical representations of data relationships, are trained on datasets to optimize
+                    parameters for accurate predictions. To assess performance, data is split into training and testing
+                    sets, ensuring models generalize well to new data and avoid overfitting. With supervised,
+                    unsupervised,
+                    and reinforcement learning techniques, machine learning finds applications in diverse fields like
+                    healthcare, finance, and autonomous vehicles, shaping our increasingly data-driven world.</p>
+                <p class="paragraph">
+                    Machine learning, a subset of artificial intelligence, enables computers to learn from data and make
+                    predictions or decisions without being explicitly programmed. It leverages algorithms to identify
+                    patterns in data, which are used to train models for various tasks. With supervised, unsupervised,
+                    and
+                    reinforcement learning techniques, machine learning finds applications across industries,
+                    revolutionizing fields such as healthcare, finance, and autonomous vehicles.
+                </p>
+                <p class="paragraph">
+                    Machine learning, a subset of artificial intelligence, enables computers to learn from data and make
+                    predictions or decisions without being explicitly programmed. It leverages algorithms to identify
+                    patterns in data, which are used to train models for various tasks. With supervised, unsupervised,
+                    and
+                    reinforcement learning techniques, machine learning finds applications across industries,
+                    revolutionizing fields such as healthcare, finance, and autonomous vehicles.
+                </p>
+            </div>
+            <div class="content-section hidden" id="basicsContent">
+                <div class="ws-head">BASICS OF AI</div>
+                <p class="paragraph">
+                <ul>
+                    <li>
+                        <span>Definition</span>: Artificial Intelligence (AI) refers to the simulation of human
+                        intelligence in
+                        machines that are programmed to think and mimic human actions. It encompasses various
+                        techniques,
+                        including machine learning, natural language processing, computer vision, and robotics, among
+                        others.
+                    </li>
+                    <li>
+                        <span>Machine Learning</span>: Machine learning is a subset of AI that focuses on developing
+                        algorithms that
+                        enable computers to learn from and make predictions or decisions based on data, without being
+                        explicitly
+                        programmed. It involves training models on data and optimizing their parameters to improve
+                        performance.
+                    </li>
+                    <li>
+                        <span>Neural Networks</span>: Neural networks are a type of machine learning model inspired by
+                        the structure
+                        and function of the human brain. They consist of interconnected nodes (neurons) organized into
+                        layers,
+                        each performing specific operations on the input data.
+
+                    </li>
+                    <li>
+                        <span>Learning</span> : Deep learning is a subfield of machine learning that uses neural
+                        networks with
+                        many layers (deep neural networks) to learn complex patterns in large amounts of data. It has
+                        achieved
+                        remarkable success in tasks such as image and speech recognition, natural language processing,
+                        and
+                        playing games.
+                    </li>
+                    <li>
+                        <span>Natural Language Processing (NLP)</span>: NLP is a branch of AI that focuses on enabling
+                        computers to
+                        understand, interpret, and generate human language. It involves tasks such as sentiment
+                        analysis, text
+                        classification, language translation, and speech recognition.
+                    </li>
+                    <li>
+                        <span>Computer Vision</span>: Computer vision is a field of AI that enables computers to
+                        interpret and analyze
+                        visual information from the real world. It involves tasks such as object detection, image
+                        classification, facial recognition, and image segmentation.
+
+                    </li>
+                    <li>
+                        <span>Robotics</span>: Robotics combines AI, sensors, and actuators to design and build robots
+                        capable of
+                        performing tasks autonomously or semi-autonomously. AI techniques are used to enable robots to
+                        perceive
+                        their environment, make decisions, and interact with humans and other machines.
+
+                    </li>
+                    <p>
+                        These are just some of the basics of AI, and the field is constantly evolving with advancements
+                        in
+                        technology and research. AI has applications across various industries, including healthcare,
+                        finance,
+                        transportation, education, and entertainment, and it has the potential to significantly impact
+                        society
+                        in the future.
+                    </p>
+                    </p>
+
+
+            </div>
+
+            <div class="content-section hidden" id="roadmapContent">
+                <div class="ws-head">ROADMAP</div>
+                <p class="paragraph">
+            
+                </p>
+            </div>
+            <div class="content-section hidden" id="LAContent">
+                <div class="ws-head">LINEAR ALGEBRA</div>
+                <p class="paragraph">
+            
+                </p>
+            </div>
+            <div class="content-section hidden" id="calculusContent">
+                <div class="ws-head">CALCULUS</div>
+                <p class="paragraph">
+            
+                </p>
+            </div>
+            <div class="content-section hidden" id="statsContent">
+                <div class="ws-head">STATISTICS</div>
+                <p class="paragraph">
+            
+                </p>
+            </div>
         </div>
 
     </div>
     <!-- footer section -->
     <div class="footer"></div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
